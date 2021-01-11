@@ -1,0 +1,1 @@
+execute as @a[nbt={SelectedItem:{id:"minecraft:bone"}}] run function uberop:road
