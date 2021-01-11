@@ -1,6 +1,6 @@
-say Making magic, again!
+say Making magic!
 enchant @p aqua_affinity 
-enchant @p bane_of_arthropods 5  
+enchant @p bane_of_arthropods 5
 enchant @p protection 4
 enchant @p infinity 1
 enchant @p flame 1
