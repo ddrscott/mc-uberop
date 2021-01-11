@@ -10,6 +10,6 @@ execute at @s run setblock ^-3 ^-1 ^ diamond_block replace
 execute at @s run setblock ^-4 ^-1 ^ gold_block replace
 execute at @s run setblock ^-4 ^ ^ torch replace 
 # underlayment
-execute at @s run setblock ^1 ^-3 ^ sea_lantern replace
-execute at @s run setblock ^ ^-3 ^ sea_lantern replace
-execute at @s run setblock ^-1 ^-3 ^ sea_lantern replace
+execute at @s run setblock ^1 ^-2 ^ sea_lantern replace
+execute at @s run setblock ^ ^-2 ^ sea_lantern replace
+execute at @s run setblock ^-1 ^-2 ^ sea_lantern replace
