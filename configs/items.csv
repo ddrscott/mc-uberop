@@ -1,0 +1,11 @@
+id,type
+sword,attack
+axe,attack
+pickaxe,attack
+bow,attack
+crossbow,attack
+trident,attack
+boots,defense
+leggings,defense
+chestplate,defense
+helmet,defense
