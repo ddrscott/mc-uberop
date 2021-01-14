@@ -1,5 +1,5 @@
 # tp -195 63 91
-execute at @s run fill ~25 ~15 ~25 ~1 ~ ~1 air
+execute at @s run fill ~25 ~17 ~25 ~1 ~ ~1 air
 
 # clear everything first
 execute at @s run fill ~25 ~10 ~15 ~1 ~-10 ~1 air
@@ -27,19 +27,22 @@ execute at @s run fill ~7 ~7 ~3 ~6 ~-6 ~4 gray_concrete
 execute at @s run fill ~23 ~14 ~3 ~22 ~-6 ~4 gray_concrete
 
 # first level ceiling
-execute at @s run fill ~25 ~7 ~15 ~2 ~7 ~1 white_concrete
-
-# 2nd level floor
-# execute at @s run fill ~25 ~8 ~15 ~2 ~8 ~1 white_concrete
+execute at @s run fill ~25 ~7 ~15 ~4 ~7 ~1 quartz_block
 
 # 2nd level box
-execute at @s run fill ~24 ~15 ~3 ~14 ~15 ~25 white_concrete
-execute at @s run fill ~24 ~9 ~25 ~14 ~15 ~25 white_concrete
-execute at @s run fill ~24 ~9 ~3 ~14 ~15 ~3 white_concrete
-execute at @s run fill ~24 ~8 ~3 ~14 ~8 ~25 white_concrete
-#           pillar
-execute at @s run fill ~23 ~7 ~24 ~22 ~-6 ~23 gray_concrete
-execute at @s run fill ~16 ~7 ~24 ~15 ~-6 ~23 gray_concrete
+execute at @s run fill ~24 ~15 ~25 ~14 ~15 ~3 quartz_block
+execute at @s run fill ~24 ~9 ~25 ~14 ~15 ~25 quartz_block
+execute at @s run fill ~24 ~9 ~3 ~14 ~15 ~3 quartz_block
+execute at @s run fill ~24 ~8 ~3 ~14 ~8 ~25 quartz_block
+execute at @s run fill ~13 ~8 ~4 ~13 ~8 ~14 quartz_slab
+# 2nd level glass pool
+execute at @s run fill ~22 ~16 ~23 ~16 ~15 ~5 black_stained_glass_pane
+execute at @s run fill ~22 ~15 ~23 ~16 ~15 ~5 black_stained_glass
+execute at @s run fill ~21 ~16 ~22 ~17 ~16 ~6 water
+#           pillars
+execute at @s run fill ~23 ~7 ~24 ~22 ~-9 ~23 gray_concrete
+execute at @s run fill ~16 ~7 ~24 ~15 ~-9 ~23 gray_concrete
+execute at @s run fill ~17 ~7 ~13 ~17 ~1 ~13 gray_concrete
 
 
 # basement cutout
