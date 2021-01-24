@@ -10,9 +10,9 @@ git clone https://github.com/ddrscott/mc-uberop.git
 cd mc-uberop
 
 # for every save in Minecraft, link the code directory
-find ~/Library/Application\ Support/minecraft/saves \
-  -maxdepth 2     \
-  -type d         \
-  -name datapacks \
-  -exec ln -s "${PWD}" {}/mc-uberop \;
+find "${HOME}/Library/Application Support/minecraft/saves" \
+   -name datapacks \
+   -type d         \
+   -maxdepth 2     \
+   -exec ln -vs ~/code/mc-uberop '{}' \;
 ```
