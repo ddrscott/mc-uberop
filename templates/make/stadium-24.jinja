@@ -1,14 +1,22 @@
+{#
+# remove insides
+{% for i in range(1,25) %}
+{{ disk(25, bottom=i, floor='air') | join('\n') }}
+{% endfor %}
+#}
+
 # subfloor
 {{ disk(33, bottom=-1, floor='cobblestone') | join('\n') }}
 {{ disk(32, bottom=-2, floor='cobblestone') | join('\n') }}
 
 # outer wall
 {{ cylinder(33, top=23, bottom=22, walls='black_concrete') | join('\n') }}
+{{ cylinder(33, top=22, bottom=22, walls='glowstone') | join('\n') }}
 {{ cylinder(33, top=21, bottom=19, walls='red_concrete') | join('\n') }}
 {{ cylinder(33, top=18, bottom=16, walls='orange_concrete') | join('\n') }}
-{{ cylinder(33, top=15, bottom=12, walls='yellow_concrete') | join('\n') }}
-{{ cylinder(33, top=11, bottom=11, walls='glowstone') | join('\n') }}
-{{ cylinder(33, top=10, bottom=0, walls='black_concrete') | join('\n') }}
+{{ cylinder(33, top=15, bottom=13, walls='yellow_concrete') | join('\n') }}
+{{ cylinder(33, top=12, bottom=12, walls='glowstone') | join('\n') }}
+{{ cylinder(33, top=11, bottom=0, walls='black_concrete') | join('\n') }}
 
 # inner glass
 {{ cylinder(24, top=6, bottom=0, walls='black_stained_glass') | join('\n') }}
@@ -16,8 +24,6 @@
 # top walkway
 {{ disk(26, bottom=7, floor='white_concrete') | join('\n') }}
 {{ disk(21, bottom=7, floor='air') | join('\n') }}
-{{ disk(24, bottom=8, floor='torch') | join('\n') }}
-{{ disk(23, bottom=8, floor='air') | join('\n') }}
 
 # lava ring
 {{ disk(31, bottom=1, floor='lava') | join('\n') }}
@@ -27,3 +33,12 @@
 {{ disk(23, bottom=1, floor='air') | join('\n') }}
 {{ disk(23, bottom=0, floor='air') | join('\n') }}
 {{ disk(23, bottom=0, floor='light_gray_wool') | join('\n') }}
+
+{{ cylinder(25, top=25, bottom=25, walls='glowstone') | join('\n') }}
+{{ cylinder(25, top=23, bottom=23, walls='glowstone') | join('\n') }}
+{{ cylinder(23, top=21, bottom=21, walls='glowstone') | join('\n') }}
+{{ cylinder(21, top=19, bottom=19, walls='glowstone') | join('\n') }}
+{{ cylinder(16, top=17, bottom=17, walls='glowstone') | join('\n') }}
+{{ cylinder(10, top=15, bottom=15, walls='glowstone') | join('\n') }}
+{{ cylinder( 6, top=15, bottom=15, walls='glowstone') | join('\n') }}
+{{     disk( 3, bottom=15, floor='glowstone') | join('\n') }}
