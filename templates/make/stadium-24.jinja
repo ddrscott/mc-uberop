@@ -1,0 +1,29 @@
+# subfloor
+{{ disk(33, bottom=-1, floor='cobblestone') | join('\n') }}
+{{ disk(32, bottom=-2, floor='cobblestone') | join('\n') }}
+
+# outer wall
+{{ cylinder(33, top=23, bottom=22, walls='black_concrete') | join('\n') }}
+{{ cylinder(33, top=21, bottom=19, walls='red_concrete') | join('\n') }}
+{{ cylinder(33, top=18, bottom=16, walls='orange_concrete') | join('\n') }}
+{{ cylinder(33, top=15, bottom=12, walls='yellow_concrete') | join('\n') }}
+{{ cylinder(33, top=11, bottom=11, walls='glowstone') | join('\n') }}
+{{ cylinder(33, top=10, bottom=0, walls='black_concrete') | join('\n') }}
+
+# inner glass
+{{ cylinder(24, top=6, bottom=0, walls='black_stained_glass') | join('\n') }}
+
+# top walkway
+{{ disk(26, bottom=7, floor='white_concrete') | join('\n') }}
+{{ disk(21, bottom=7, floor='air') | join('\n') }}
+{{ disk(24, bottom=8, floor='torch') | join('\n') }}
+{{ disk(23, bottom=8, floor='air') | join('\n') }}
+
+# lava ring
+{{ disk(31, bottom=1, floor='lava') | join('\n') }}
+{{ disk(25, bottom=1, floor='white_concrete') | join('\n') }}
+
+# inner floor
+{{ disk(23, bottom=1, floor='air') | join('\n') }}
+{{ disk(23, bottom=0, floor='air') | join('\n') }}
+{{ disk(23, bottom=0, floor='light_gray_wool') | join('\n') }}

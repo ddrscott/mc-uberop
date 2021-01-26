@@ -6,8 +6,10 @@ from functools import lru_cache
 
 MAX_ENCHANT_LEVEL = 999999999
 
+TEMPLATE_PATH = 'templates'
+
 jinja_env = Environment(
-    loader=FileSystemLoader(['templates']),
+    loader=FileSystemLoader([TEMPLATE_PATH]),
     autoescape=select_autoescape(['json'])
 )
 
@@ -30,7 +32,8 @@ def read_csv(file):
 
 def render(name):
     template = jinja_env.get_template(name)
-    return template.render(configs=configs(), enchantments=enchantments)
+    import sys
+    return template.render( **{ **sys.modules[__name__].__dict__, **{'configs': configs()}})
 
 
 def enchantments(item_id):
@@ -52,7 +55,7 @@ def square_grid(block, limit):
                     yield f"setblock ~{x} ~{y} ~{z} {block}"
 
 
-def circle(radius, h, walls='netherite_block', floor='birch_planks'):
+def cylinder(radius, top, bottom=-1, walls='netherite_block'):
     x0 = 0
     y0 = 0
 
@@ -62,10 +65,10 @@ def circle(radius, h, walls='netherite_block', floor='birch_planks'):
     x = 0
     y = radius
 
-    yield f"fill ~{x0} ~ ~{y0 + radius} ~{x0} ~{h} ~{y0 + radius} {walls}"
-    yield f"fill ~{x0} ~ ~{y0 - radius} ~{x0} ~{h} ~{y0 - radius} {walls}"
-    yield f"fill ~{x0 + radius} ~ ~{y0} ~{x0 + radius} ~{h} ~{y0} {walls}"
-    yield f"fill ~{x0 - radius} ~ ~{y0} ~{x0 - radius} ~{h} ~{y0} {walls}"
+    yield f"fill ~{x0} ~{bottom} ~{y0 + radius} ~{x0} ~{top} ~{y0 + radius} {walls}"
+    yield f"fill ~{x0} ~{bottom} ~{y0 - radius} ~{x0} ~{top} ~{y0 - radius} {walls}"
+    yield f"fill ~{x0 + radius} ~{bottom} ~{y0} ~{x0 + radius} ~{top} ~{y0} {walls}"
+    yield f"fill ~{x0 - radius} ~{bottom} ~{y0} ~{x0 - radius} ~{top} ~{y0} {walls}"
 
     while x < y:
         if f >= 0:
@@ -75,23 +78,57 @@ def circle(radius, h, walls='netherite_block', floor='birch_planks'):
         x += 1
         ddf_x += 2
         f += ddf_x
-        # walls
-        yield f"fill ~{x0 + x} ~ ~{y0 + y} ~{x0 + x} ~{h} ~{y0 + y} {walls}"
-        yield f"fill ~{x0 - x} ~ ~{y0 + y} ~{x0 - x} ~{h} ~{y0 + y} {walls}"
-        yield f"fill ~{x0 + x} ~ ~{y0 - y} ~{x0 + x} ~{h} ~{y0 - y} {walls}"
-        yield f"fill ~{x0 - x} ~ ~{y0 - y} ~{x0 - x} ~{h} ~{y0 - y} {walls}"
-        yield f"fill ~{x0 + y} ~ ~{y0 + x} ~{x0 + y} ~{h} ~{y0 + x} {walls}"
-        yield f"fill ~{x0 - y} ~ ~{y0 + x} ~{x0 - y} ~{h} ~{y0 + x} {walls}"
-        yield f"fill ~{x0 + y} ~ ~{y0 - x} ~{x0 + y} ~{h} ~{y0 - x} {walls}"
-        yield f"fill ~{x0 - y} ~ ~{y0 - x} ~{x0 - y} ~{h} ~{y0 - x} {walls}"
 
+        # walls
+        yield f"fill ~{x0 + x} ~{bottom} ~{y0 + y} ~{x0 + x} ~{top} ~{y0 + y} {walls}"
+        yield f"fill ~{x0 - x} ~{bottom} ~{y0 + y} ~{x0 - x} ~{top} ~{y0 + y} {walls}"
+        yield f"fill ~{x0 + x} ~{bottom} ~{y0 - y} ~{x0 + x} ~{top} ~{y0 - y} {walls}"
+        yield f"fill ~{x0 - x} ~{bottom} ~{y0 - y} ~{x0 - x} ~{top} ~{y0 - y} {walls}"
+        yield f"fill ~{x0 + y} ~{bottom} ~{y0 + x} ~{x0 + y} ~{top} ~{y0 + x} {walls}"
+        yield f"fill ~{x0 - y} ~{bottom} ~{y0 + x} ~{x0 - y} ~{top} ~{y0 + x} {walls}"
+        yield f"fill ~{x0 + y} ~{bottom} ~{y0 - x} ~{x0 + y} ~{top} ~{y0 - x} {walls}"
+        yield f"fill ~{x0 - y} ~{bottom} ~{y0 - x} ~{x0 - y} ~{top} ~{y0 - x} {walls}"
+
+
+def disk(radius, bottom=-1, floor='birch_planks'):
+    x0 = 0
+    y0 = 0
+
+    f = 1 - radius
+    ddf_x = 1
+    ddf_y = -2 * radius
+    x = 0
+    y = radius
+
+    yield f"fill ~{x0} ~{bottom} ~{y0 + radius} ~{x0} ~{bottom} ~{y0 + radius} {floor}"
+    yield f"fill ~{x0} ~{bottom} ~{y0 - radius} ~{x0} ~{bottom} ~{y0 - radius} {floor}"
+    yield f"fill ~{x0 + radius} ~{bottom} ~{y0} ~{x0 + radius} ~{bottom} ~{y0} {floor}"
+    yield f"fill ~{x0 - radius} ~{bottom} ~{y0} ~{x0 - radius} ~{bottom} ~{y0} {floor}"
+
+    while x < y:
+        if f >= 0:
+            y -= 1
+            ddf_y += 2
+            f += ddf_y
+        x += 1
+        ddf_x += 2
+        f += ddf_x
         # floor
-        yield f"fill ~{x0 - x} ~-1 ~{y0 - y} ~{x0 + x} ~-1 ~{y0 + y} {floor}"
-        yield f"fill ~{x0 - y} ~-1 ~{y0 - x} ~{x0 + y} ~-1 ~{y0 + x} {floor}"
+        yield f"fill ~{x0 - x} ~{bottom} ~{y0 - y} ~{x0 + x} ~{bottom} ~{y0 + y} {floor}"
+        yield f"fill ~{x0 - y} ~{bottom} ~{y0 - x} ~{x0 + y} ~{bottom} ~{y0 + x} {floor}"
+
+
+def run(srcs=TEMPLATE_PATH, dst='data/uberop/functions'):
+    import pathlib
+    from os.path import join
+    srcs_slash = str(join(srcs, ''))
+    for src in pathlib.Path(srcs).glob(join('**', '*.jinja')):
+        final_src = str(src).replace(srcs_slash, '')
+        final_dst = str(join(dst, final_src)).replace('.jinja', '.mcfunction')
+        print(f'compiling {final_src} to {final_dst}')
+        with open(final_dst, 'w') as f:
+            f.write(render(final_src))
 
 
 if __name__ == "__main__":
-    # print(render('chest.jinja'))
-    #print(enchant('golden_trident'))
-    # [print(l) for l in square_grid('sea_lantern', 50)]
-    [print(l) for l in circle(25, 8, walls='white_concrete', floor='birch_planks')]
+    run('templates')
