@@ -1,4 +1,4 @@
-execute at @s run setblock ^ ^ ^1 chest{Items:[
+setblock ^ ^ ^ chest{Items:[
 {%- for item in configs.chest -%}
 {{- ',' if not loop.first -}}
 {Slot:{{item.slot}},id:"{{item.id}}",Count:{{item.count}},tag:{Enchantments:{{enchantments(item.id)}}}}

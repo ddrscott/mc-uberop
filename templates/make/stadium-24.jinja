@@ -8,8 +8,8 @@
 {{ disk(32, bottom=-2, floor='cobblestone') | join('\n') }}
 
 # outer wall
-{{ disk(34, bottom=24, floor='black_concrete') | join('\n') }}
-{{ disk(31, bottom=24, floor='air') | join('\n') }}
+{{ disk(34, bottom=24, floor='black_concrete', ring=3) | join('\n') }}
+{#disk(31, bottom=24, floor='air') | join('\n')#}
 {{ cylinder(33, top=23, bottom=23, walls='black_concrete') | join('\n') }}
 {{ cylinder(33, top=22, bottom=22, walls='glowstone') | join('\n') }}
 {{ cylinder(33, top=21, bottom=19, walls='red_concrete') | join('\n') }}
@@ -22,8 +22,10 @@
 {{ cylinder(24, top=6, bottom=0, walls='black_stained_glass') | join('\n') }}
 
 # top walkway
-{{ disk(25, bottom=7, floor='white_concrete') | join('\n') }}
-{{ disk(21, bottom=7, floor='air') | join('\n') }}
+{{ disk(25, bottom=7, floor='white_concrete', ring=4) | join('\n') }}
+
+# top walkway ladders
+{{ disk(25, bottom=7, floor='white_concrete', ring=4) | join('\n') }}
 
 # lava ring
 {{ disk(31, bottom=1, floor='lava') | join('\n') }}
@@ -34,21 +36,20 @@
 {{ disk(23, bottom=1, floor='air') | join('\n') }}
 {{ disk(23, bottom=0, floor='light_gray_wool') | join('\n') }}
 
-{{ cylinder(25, top=25, bottom=25, walls='netherrack') | join('\n') }}
-{{ cylinder(25, top=23, bottom=23, walls='netherrack') | join('\n') }}
-{{ cylinder(23, top=21, bottom=21, walls='netherrack') | join('\n') }}
-{{ cylinder(21, top=19, bottom=19, walls='netherrack') | join('\n') }}
-{{ cylinder(16, top=17, bottom=17, walls='netherrack') | join('\n') }}
-{{ cylinder(10, top=15, bottom=15, walls='netherrack') | join('\n') }}
-{{ cylinder( 6, top=15, bottom=15, walls='netherrack') | join('\n') }}
-{{     disk( 3, bottom=15, floor='netherrack') | join('\n') }}
+execute positioned ^ ^5 ^ run function uberop:make/fire-bowl-24
 
-{{ cylinder(25, top=26, bottom=26, walls='fire') | join('\n') }}
-{{ cylinder(25, top=24, bottom=24, walls='fire') | join('\n') }}
-{{ cylinder(23, top=22, bottom=22, walls='fire') | join('\n') }}
-{{ cylinder(21, top=20, bottom=20, walls='fire') | join('\n') }}
-{{ cylinder(16, top=18, bottom=18, walls='fire') | join('\n') }}
-{{ cylinder(10, top=16, bottom=16, walls='fire') | join('\n') }}
-{{ cylinder( 6, top=16, bottom=16, walls='fire') | join('\n') }}
-{{     disk( 3, bottom=16, floor='fire') | join('\n') }}
+execute positioned ^ ^ ^-23 rotated 0 0 run function uberop:make/bunker-24
+execute positioned ^ ^ ^23 rotated -180 0 run function uberop:make/bunker-24
 
+# fill ^26 ^8 ^ ^26 ^30 ^ ladder[facing=north]
+# fill ^-26 ^8 ^ ^-26 ^30 ^ ladder[facing=north]
+
+
+# items
+execute positioned ^20 ^ ^ rotated 0 0 run function uberop:make/chest-stand
+execute positioned ^-20 ^ ^ run function uberop:make/chest-stand
+# execute positioned ^ ^ ^20 run function uberop:make/chest-stand
+# execute positioned ^ ^ ^-20 run function uberop:make/chest-stand
+
+execute positioned ^-10 ^ ^10 rotated 0 -90 run function uberop:pixels/charmander
+execute positioned ^-10 ^8 ^-30 rotated 0 0 run function uberop:pixels/charmander

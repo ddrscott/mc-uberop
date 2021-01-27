@@ -3,6 +3,7 @@ sword,attack
 axe,attack
 pickaxe,attack
 bow,attack
+arrow,attack
 crossbow,attack
 trident,attack
 boots,defense

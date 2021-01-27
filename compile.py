@@ -90,7 +90,7 @@ def cylinder(radius, top, bottom=-1, walls='netherite_block'):
         yield f"fill ~{x0 - y} ~{bottom} ~{y0 - x} ~{x0 - y} ~{top} ~{y0 - x} {walls}"
 
 
-def disk(radius, bottom=-1, floor='birch_planks'):
+def disk(radius, bottom=-1, floor='birch_planks', ring=None):
     x0 = 0
     y0 = 0
 
@@ -116,6 +116,9 @@ def disk(radius, bottom=-1, floor='birch_planks'):
         # floor
         yield f"fill ~{x0 - x} ~{bottom} ~{y0 - y} ~{x0 + x} ~{bottom} ~{y0 + y} {floor}"
         yield f"fill ~{x0 - y} ~{bottom} ~{y0 - x} ~{x0 + y} ~{bottom} ~{y0 + x} {floor}"
+
+    if ring:
+        yield from disk(radius-ring, bottom=bottom, floor='air')
 
 
 def run(srcs=TEMPLATE_PATH, dst='data/uberop/functions'):
