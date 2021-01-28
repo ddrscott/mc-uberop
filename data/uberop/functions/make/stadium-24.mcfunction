@@ -1,5 +1,164 @@
 # remove insides
 
+fill ~0 ~-2 ~34 ~0 ~-2 ~34 air
+fill ~0 ~-2 ~-34 ~0 ~-2 ~-34 air
+fill ~34 ~-2 ~0 ~34 ~-2 ~0 air
+fill ~-34 ~-2 ~0 ~-34 ~-2 ~0 air
+fill ~-1 ~-2 ~-34 ~1 ~-2 ~34 air
+fill ~-34 ~-2 ~-1 ~34 ~-2 ~1 air
+fill ~-2 ~-2 ~-34 ~2 ~-2 ~34 air
+fill ~-34 ~-2 ~-2 ~34 ~-2 ~2 air
+fill ~-3 ~-2 ~-34 ~3 ~-2 ~34 air
+fill ~-34 ~-2 ~-3 ~34 ~-2 ~3 air
+fill ~-4 ~-2 ~-34 ~4 ~-2 ~34 air
+fill ~-34 ~-2 ~-4 ~34 ~-2 ~4 air
+fill ~-5 ~-2 ~-34 ~5 ~-2 ~34 air
+fill ~-34 ~-2 ~-5 ~34 ~-2 ~5 air
+fill ~-6 ~-2 ~-33 ~6 ~-2 ~33 air
+fill ~-33 ~-2 ~-6 ~33 ~-2 ~6 air
+fill ~-7 ~-2 ~-33 ~7 ~-2 ~33 air
+fill ~-33 ~-2 ~-7 ~33 ~-2 ~7 air
+fill ~-8 ~-2 ~-33 ~8 ~-2 ~33 air
+fill ~-33 ~-2 ~-8 ~33 ~-2 ~8 air
+fill ~-9 ~-2 ~-33 ~9 ~-2 ~33 air
+fill ~-33 ~-2 ~-9 ~33 ~-2 ~9 air
+fill ~-10 ~-2 ~-32 ~10 ~-2 ~32 air
+fill ~-32 ~-2 ~-10 ~32 ~-2 ~10 air
+fill ~-11 ~-2 ~-32 ~11 ~-2 ~32 air
+fill ~-32 ~-2 ~-11 ~32 ~-2 ~11 air
+fill ~-12 ~-2 ~-32 ~12 ~-2 ~32 air
+fill ~-32 ~-2 ~-12 ~32 ~-2 ~12 air
+fill ~-13 ~-2 ~-31 ~13 ~-2 ~31 air
+fill ~-31 ~-2 ~-13 ~31 ~-2 ~13 air
+fill ~-14 ~-2 ~-31 ~14 ~-2 ~31 air
+fill ~-31 ~-2 ~-14 ~31 ~-2 ~14 air
+fill ~-15 ~-2 ~-31 ~15 ~-2 ~31 air
+fill ~-31 ~-2 ~-15 ~31 ~-2 ~15 air
+fill ~-16 ~-2 ~-30 ~16 ~-2 ~30 air
+fill ~-30 ~-2 ~-16 ~30 ~-2 ~16 air
+fill ~-17 ~-2 ~-29 ~17 ~-2 ~29 air
+fill ~-29 ~-2 ~-17 ~29 ~-2 ~17 air
+fill ~-18 ~-2 ~-29 ~18 ~-2 ~29 air
+fill ~-29 ~-2 ~-18 ~29 ~-2 ~18 air
+fill ~-19 ~-2 ~-28 ~19 ~-2 ~28 air
+fill ~-28 ~-2 ~-19 ~28 ~-2 ~19 air
+fill ~-20 ~-2 ~-27 ~20 ~-2 ~27 air
+fill ~-27 ~-2 ~-20 ~27 ~-2 ~20 air
+fill ~-21 ~-2 ~-27 ~21 ~-2 ~27 air
+fill ~-27 ~-2 ~-21 ~27 ~-2 ~21 air
+fill ~-22 ~-2 ~-26 ~22 ~-2 ~26 air
+fill ~-26 ~-2 ~-22 ~26 ~-2 ~22 air
+fill ~-23 ~-2 ~-25 ~23 ~-2 ~25 air
+fill ~-25 ~-2 ~-23 ~25 ~-2 ~23 air
+fill ~-24 ~-2 ~-24 ~24 ~-2 ~24 air
+fill ~-24 ~-2 ~-24 ~24 ~-2 ~24 air
+
+fill ~0 ~-1 ~34 ~0 ~-1 ~34 air
+fill ~0 ~-1 ~-34 ~0 ~-1 ~-34 air
+fill ~34 ~-1 ~0 ~34 ~-1 ~0 air
+fill ~-34 ~-1 ~0 ~-34 ~-1 ~0 air
+fill ~-1 ~-1 ~-34 ~1 ~-1 ~34 air
+fill ~-34 ~-1 ~-1 ~34 ~-1 ~1 air
+fill ~-2 ~-1 ~-34 ~2 ~-1 ~34 air
+fill ~-34 ~-1 ~-2 ~34 ~-1 ~2 air
+fill ~-3 ~-1 ~-34 ~3 ~-1 ~34 air
+fill ~-34 ~-1 ~-3 ~34 ~-1 ~3 air
+fill ~-4 ~-1 ~-34 ~4 ~-1 ~34 air
+fill ~-34 ~-1 ~-4 ~34 ~-1 ~4 air
+fill ~-5 ~-1 ~-34 ~5 ~-1 ~34 air
+fill ~-34 ~-1 ~-5 ~34 ~-1 ~5 air
+fill ~-6 ~-1 ~-33 ~6 ~-1 ~33 air
+fill ~-33 ~-1 ~-6 ~33 ~-1 ~6 air
+fill ~-7 ~-1 ~-33 ~7 ~-1 ~33 air
+fill ~-33 ~-1 ~-7 ~33 ~-1 ~7 air
+fill ~-8 ~-1 ~-33 ~8 ~-1 ~33 air
+fill ~-33 ~-1 ~-8 ~33 ~-1 ~8 air
+fill ~-9 ~-1 ~-33 ~9 ~-1 ~33 air
+fill ~-33 ~-1 ~-9 ~33 ~-1 ~9 air
+fill ~-10 ~-1 ~-32 ~10 ~-1 ~32 air
+fill ~-32 ~-1 ~-10 ~32 ~-1 ~10 air
+fill ~-11 ~-1 ~-32 ~11 ~-1 ~32 air
+fill ~-32 ~-1 ~-11 ~32 ~-1 ~11 air
+fill ~-12 ~-1 ~-32 ~12 ~-1 ~32 air
+fill ~-32 ~-1 ~-12 ~32 ~-1 ~12 air
+fill ~-13 ~-1 ~-31 ~13 ~-1 ~31 air
+fill ~-31 ~-1 ~-13 ~31 ~-1 ~13 air
+fill ~-14 ~-1 ~-31 ~14 ~-1 ~31 air
+fill ~-31 ~-1 ~-14 ~31 ~-1 ~14 air
+fill ~-15 ~-1 ~-31 ~15 ~-1 ~31 air
+fill ~-31 ~-1 ~-15 ~31 ~-1 ~15 air
+fill ~-16 ~-1 ~-30 ~16 ~-1 ~30 air
+fill ~-30 ~-1 ~-16 ~30 ~-1 ~16 air
+fill ~-17 ~-1 ~-29 ~17 ~-1 ~29 air
+fill ~-29 ~-1 ~-17 ~29 ~-1 ~17 air
+fill ~-18 ~-1 ~-29 ~18 ~-1 ~29 air
+fill ~-29 ~-1 ~-18 ~29 ~-1 ~18 air
+fill ~-19 ~-1 ~-28 ~19 ~-1 ~28 air
+fill ~-28 ~-1 ~-19 ~28 ~-1 ~19 air
+fill ~-20 ~-1 ~-27 ~20 ~-1 ~27 air
+fill ~-27 ~-1 ~-20 ~27 ~-1 ~20 air
+fill ~-21 ~-1 ~-27 ~21 ~-1 ~27 air
+fill ~-27 ~-1 ~-21 ~27 ~-1 ~21 air
+fill ~-22 ~-1 ~-26 ~22 ~-1 ~26 air
+fill ~-26 ~-1 ~-22 ~26 ~-1 ~22 air
+fill ~-23 ~-1 ~-25 ~23 ~-1 ~25 air
+fill ~-25 ~-1 ~-23 ~25 ~-1 ~23 air
+fill ~-24 ~-1 ~-24 ~24 ~-1 ~24 air
+fill ~-24 ~-1 ~-24 ~24 ~-1 ~24 air
+
+fill ~0 ~0 ~34 ~0 ~0 ~34 air
+fill ~0 ~0 ~-34 ~0 ~0 ~-34 air
+fill ~34 ~0 ~0 ~34 ~0 ~0 air
+fill ~-34 ~0 ~0 ~-34 ~0 ~0 air
+fill ~-1 ~0 ~-34 ~1 ~0 ~34 air
+fill ~-34 ~0 ~-1 ~34 ~0 ~1 air
+fill ~-2 ~0 ~-34 ~2 ~0 ~34 air
+fill ~-34 ~0 ~-2 ~34 ~0 ~2 air
+fill ~-3 ~0 ~-34 ~3 ~0 ~34 air
+fill ~-34 ~0 ~-3 ~34 ~0 ~3 air
+fill ~-4 ~0 ~-34 ~4 ~0 ~34 air
+fill ~-34 ~0 ~-4 ~34 ~0 ~4 air
+fill ~-5 ~0 ~-34 ~5 ~0 ~34 air
+fill ~-34 ~0 ~-5 ~34 ~0 ~5 air
+fill ~-6 ~0 ~-33 ~6 ~0 ~33 air
+fill ~-33 ~0 ~-6 ~33 ~0 ~6 air
+fill ~-7 ~0 ~-33 ~7 ~0 ~33 air
+fill ~-33 ~0 ~-7 ~33 ~0 ~7 air
+fill ~-8 ~0 ~-33 ~8 ~0 ~33 air
+fill ~-33 ~0 ~-8 ~33 ~0 ~8 air
+fill ~-9 ~0 ~-33 ~9 ~0 ~33 air
+fill ~-33 ~0 ~-9 ~33 ~0 ~9 air
+fill ~-10 ~0 ~-32 ~10 ~0 ~32 air
+fill ~-32 ~0 ~-10 ~32 ~0 ~10 air
+fill ~-11 ~0 ~-32 ~11 ~0 ~32 air
+fill ~-32 ~0 ~-11 ~32 ~0 ~11 air
+fill ~-12 ~0 ~-32 ~12 ~0 ~32 air
+fill ~-32 ~0 ~-12 ~32 ~0 ~12 air
+fill ~-13 ~0 ~-31 ~13 ~0 ~31 air
+fill ~-31 ~0 ~-13 ~31 ~0 ~13 air
+fill ~-14 ~0 ~-31 ~14 ~0 ~31 air
+fill ~-31 ~0 ~-14 ~31 ~0 ~14 air
+fill ~-15 ~0 ~-31 ~15 ~0 ~31 air
+fill ~-31 ~0 ~-15 ~31 ~0 ~15 air
+fill ~-16 ~0 ~-30 ~16 ~0 ~30 air
+fill ~-30 ~0 ~-16 ~30 ~0 ~16 air
+fill ~-17 ~0 ~-29 ~17 ~0 ~29 air
+fill ~-29 ~0 ~-17 ~29 ~0 ~17 air
+fill ~-18 ~0 ~-29 ~18 ~0 ~29 air
+fill ~-29 ~0 ~-18 ~29 ~0 ~18 air
+fill ~-19 ~0 ~-28 ~19 ~0 ~28 air
+fill ~-28 ~0 ~-19 ~28 ~0 ~19 air
+fill ~-20 ~0 ~-27 ~20 ~0 ~27 air
+fill ~-27 ~0 ~-20 ~27 ~0 ~20 air
+fill ~-21 ~0 ~-27 ~21 ~0 ~27 air
+fill ~-27 ~0 ~-21 ~27 ~0 ~21 air
+fill ~-22 ~0 ~-26 ~22 ~0 ~26 air
+fill ~-26 ~0 ~-22 ~26 ~0 ~22 air
+fill ~-23 ~0 ~-25 ~23 ~0 ~25 air
+fill ~-25 ~0 ~-23 ~25 ~0 ~23 air
+fill ~-24 ~0 ~-24 ~24 ~0 ~24 air
+fill ~-24 ~0 ~-24 ~24 ~0 ~24 air
+
 fill ~0 ~1 ~34 ~0 ~1 ~34 air
 fill ~0 ~1 ~-34 ~0 ~1 ~-34 air
 fill ~34 ~1 ~0 ~34 ~1 ~0 air
@@ -2599,108 +2758,58 @@ fill ~-24 ~49 ~-24 ~24 ~49 ~24 air
 
 
 # subfloor
-fill ~0 ~-1 ~33 ~0 ~-1 ~33 cobblestone
-fill ~0 ~-1 ~-33 ~0 ~-1 ~-33 cobblestone
-fill ~33 ~-1 ~0 ~33 ~-1 ~0 cobblestone
-fill ~-33 ~-1 ~0 ~-33 ~-1 ~0 cobblestone
-fill ~-1 ~-1 ~-33 ~1 ~-1 ~33 cobblestone
-fill ~-33 ~-1 ~-1 ~33 ~-1 ~1 cobblestone
-fill ~-2 ~-1 ~-33 ~2 ~-1 ~33 cobblestone
-fill ~-33 ~-1 ~-2 ~33 ~-1 ~2 cobblestone
-fill ~-3 ~-1 ~-33 ~3 ~-1 ~33 cobblestone
-fill ~-33 ~-1 ~-3 ~33 ~-1 ~3 cobblestone
-fill ~-4 ~-1 ~-33 ~4 ~-1 ~33 cobblestone
-fill ~-33 ~-1 ~-4 ~33 ~-1 ~4 cobblestone
-fill ~-5 ~-1 ~-33 ~5 ~-1 ~33 cobblestone
-fill ~-33 ~-1 ~-5 ~33 ~-1 ~5 cobblestone
-fill ~-6 ~-1 ~-32 ~6 ~-1 ~32 cobblestone
-fill ~-32 ~-1 ~-6 ~32 ~-1 ~6 cobblestone
-fill ~-7 ~-1 ~-32 ~7 ~-1 ~32 cobblestone
-fill ~-32 ~-1 ~-7 ~32 ~-1 ~7 cobblestone
-fill ~-8 ~-1 ~-32 ~8 ~-1 ~32 cobblestone
-fill ~-32 ~-1 ~-8 ~32 ~-1 ~8 cobblestone
-fill ~-9 ~-1 ~-32 ~9 ~-1 ~32 cobblestone
-fill ~-32 ~-1 ~-9 ~32 ~-1 ~9 cobblestone
-fill ~-10 ~-1 ~-31 ~10 ~-1 ~31 cobblestone
-fill ~-31 ~-1 ~-10 ~31 ~-1 ~10 cobblestone
-fill ~-11 ~-1 ~-31 ~11 ~-1 ~31 cobblestone
-fill ~-31 ~-1 ~-11 ~31 ~-1 ~11 cobblestone
-fill ~-12 ~-1 ~-31 ~12 ~-1 ~31 cobblestone
-fill ~-31 ~-1 ~-12 ~31 ~-1 ~12 cobblestone
-fill ~-13 ~-1 ~-30 ~13 ~-1 ~30 cobblestone
-fill ~-30 ~-1 ~-13 ~30 ~-1 ~13 cobblestone
-fill ~-14 ~-1 ~-30 ~14 ~-1 ~30 cobblestone
-fill ~-30 ~-1 ~-14 ~30 ~-1 ~14 cobblestone
-fill ~-15 ~-1 ~-29 ~15 ~-1 ~29 cobblestone
-fill ~-29 ~-1 ~-15 ~29 ~-1 ~15 cobblestone
-fill ~-16 ~-1 ~-29 ~16 ~-1 ~29 cobblestone
-fill ~-29 ~-1 ~-16 ~29 ~-1 ~16 cobblestone
-fill ~-17 ~-1 ~-28 ~17 ~-1 ~28 cobblestone
-fill ~-28 ~-1 ~-17 ~28 ~-1 ~17 cobblestone
-fill ~-18 ~-1 ~-28 ~18 ~-1 ~28 cobblestone
-fill ~-28 ~-1 ~-18 ~28 ~-1 ~18 cobblestone
-fill ~-19 ~-1 ~-27 ~19 ~-1 ~27 cobblestone
-fill ~-27 ~-1 ~-19 ~27 ~-1 ~19 cobblestone
-fill ~-20 ~-1 ~-26 ~20 ~-1 ~26 cobblestone
-fill ~-26 ~-1 ~-20 ~26 ~-1 ~20 cobblestone
-fill ~-21 ~-1 ~-25 ~21 ~-1 ~25 cobblestone
-fill ~-25 ~-1 ~-21 ~25 ~-1 ~21 cobblestone
-fill ~-22 ~-1 ~-25 ~22 ~-1 ~25 cobblestone
-fill ~-25 ~-1 ~-22 ~25 ~-1 ~22 cobblestone
-fill ~-23 ~-1 ~-24 ~23 ~-1 ~24 cobblestone
-fill ~-24 ~-1 ~-23 ~24 ~-1 ~23 cobblestone
-fill ~-24 ~-1 ~-23 ~24 ~-1 ~23 cobblestone
-fill ~-23 ~-1 ~-24 ~23 ~-1 ~24 cobblestone
-fill ~0 ~-2 ~32 ~0 ~-2 ~32 cobblestone
-fill ~0 ~-2 ~-32 ~0 ~-2 ~-32 cobblestone
-fill ~32 ~-2 ~0 ~32 ~-2 ~0 cobblestone
-fill ~-32 ~-2 ~0 ~-32 ~-2 ~0 cobblestone
-fill ~-1 ~-2 ~-32 ~1 ~-2 ~32 cobblestone
-fill ~-32 ~-2 ~-1 ~32 ~-2 ~1 cobblestone
-fill ~-2 ~-2 ~-32 ~2 ~-2 ~32 cobblestone
-fill ~-32 ~-2 ~-2 ~32 ~-2 ~2 cobblestone
-fill ~-3 ~-2 ~-32 ~3 ~-2 ~32 cobblestone
-fill ~-32 ~-2 ~-3 ~32 ~-2 ~3 cobblestone
-fill ~-4 ~-2 ~-32 ~4 ~-2 ~32 cobblestone
-fill ~-32 ~-2 ~-4 ~32 ~-2 ~4 cobblestone
-fill ~-5 ~-2 ~-32 ~5 ~-2 ~32 cobblestone
-fill ~-32 ~-2 ~-5 ~32 ~-2 ~5 cobblestone
-fill ~-6 ~-2 ~-31 ~6 ~-2 ~31 cobblestone
-fill ~-31 ~-2 ~-6 ~31 ~-2 ~6 cobblestone
-fill ~-7 ~-2 ~-31 ~7 ~-2 ~31 cobblestone
-fill ~-31 ~-2 ~-7 ~31 ~-2 ~7 cobblestone
-fill ~-8 ~-2 ~-31 ~8 ~-2 ~31 cobblestone
-fill ~-31 ~-2 ~-8 ~31 ~-2 ~8 cobblestone
-fill ~-9 ~-2 ~-31 ~9 ~-2 ~31 cobblestone
-fill ~-31 ~-2 ~-9 ~31 ~-2 ~9 cobblestone
-fill ~-10 ~-2 ~-30 ~10 ~-2 ~30 cobblestone
-fill ~-30 ~-2 ~-10 ~30 ~-2 ~10 cobblestone
-fill ~-11 ~-2 ~-30 ~11 ~-2 ~30 cobblestone
-fill ~-30 ~-2 ~-11 ~30 ~-2 ~11 cobblestone
-fill ~-12 ~-2 ~-30 ~12 ~-2 ~30 cobblestone
-fill ~-30 ~-2 ~-12 ~30 ~-2 ~12 cobblestone
-fill ~-13 ~-2 ~-29 ~13 ~-2 ~29 cobblestone
-fill ~-29 ~-2 ~-13 ~29 ~-2 ~13 cobblestone
-fill ~-14 ~-2 ~-29 ~14 ~-2 ~29 cobblestone
-fill ~-29 ~-2 ~-14 ~29 ~-2 ~14 cobblestone
-fill ~-15 ~-2 ~-28 ~15 ~-2 ~28 cobblestone
-fill ~-28 ~-2 ~-15 ~28 ~-2 ~15 cobblestone
-fill ~-16 ~-2 ~-28 ~16 ~-2 ~28 cobblestone
-fill ~-28 ~-2 ~-16 ~28 ~-2 ~16 cobblestone
-fill ~-17 ~-2 ~-27 ~17 ~-2 ~27 cobblestone
-fill ~-27 ~-2 ~-17 ~27 ~-2 ~17 cobblestone
-fill ~-18 ~-2 ~-26 ~18 ~-2 ~26 cobblestone
-fill ~-26 ~-2 ~-18 ~26 ~-2 ~18 cobblestone
-fill ~-19 ~-2 ~-26 ~19 ~-2 ~26 cobblestone
-fill ~-26 ~-2 ~-19 ~26 ~-2 ~19 cobblestone
-fill ~-20 ~-2 ~-25 ~20 ~-2 ~25 cobblestone
-fill ~-25 ~-2 ~-20 ~25 ~-2 ~20 cobblestone
-fill ~-21 ~-2 ~-24 ~21 ~-2 ~24 cobblestone
-fill ~-24 ~-2 ~-21 ~24 ~-2 ~21 cobblestone
-fill ~-22 ~-2 ~-23 ~22 ~-2 ~23 cobblestone
-fill ~-23 ~-2 ~-22 ~23 ~-2 ~22 cobblestone
-fill ~-23 ~-2 ~-22 ~23 ~-2 ~22 cobblestone
-fill ~-22 ~-2 ~-23 ~22 ~-2 ~23 cobblestone
+fill ~0 ~-1 ~33 ~0 ~-1 ~33 glowstone
+fill ~0 ~-1 ~-33 ~0 ~-1 ~-33 glowstone
+fill ~33 ~-1 ~0 ~33 ~-1 ~0 glowstone
+fill ~-33 ~-1 ~0 ~-33 ~-1 ~0 glowstone
+fill ~-1 ~-1 ~-33 ~1 ~-1 ~33 glowstone
+fill ~-33 ~-1 ~-1 ~33 ~-1 ~1 glowstone
+fill ~-2 ~-1 ~-33 ~2 ~-1 ~33 glowstone
+fill ~-33 ~-1 ~-2 ~33 ~-1 ~2 glowstone
+fill ~-3 ~-1 ~-33 ~3 ~-1 ~33 glowstone
+fill ~-33 ~-1 ~-3 ~33 ~-1 ~3 glowstone
+fill ~-4 ~-1 ~-33 ~4 ~-1 ~33 glowstone
+fill ~-33 ~-1 ~-4 ~33 ~-1 ~4 glowstone
+fill ~-5 ~-1 ~-33 ~5 ~-1 ~33 glowstone
+fill ~-33 ~-1 ~-5 ~33 ~-1 ~5 glowstone
+fill ~-6 ~-1 ~-32 ~6 ~-1 ~32 glowstone
+fill ~-32 ~-1 ~-6 ~32 ~-1 ~6 glowstone
+fill ~-7 ~-1 ~-32 ~7 ~-1 ~32 glowstone
+fill ~-32 ~-1 ~-7 ~32 ~-1 ~7 glowstone
+fill ~-8 ~-1 ~-32 ~8 ~-1 ~32 glowstone
+fill ~-32 ~-1 ~-8 ~32 ~-1 ~8 glowstone
+fill ~-9 ~-1 ~-32 ~9 ~-1 ~32 glowstone
+fill ~-32 ~-1 ~-9 ~32 ~-1 ~9 glowstone
+fill ~-10 ~-1 ~-31 ~10 ~-1 ~31 glowstone
+fill ~-31 ~-1 ~-10 ~31 ~-1 ~10 glowstone
+fill ~-11 ~-1 ~-31 ~11 ~-1 ~31 glowstone
+fill ~-31 ~-1 ~-11 ~31 ~-1 ~11 glowstone
+fill ~-12 ~-1 ~-31 ~12 ~-1 ~31 glowstone
+fill ~-31 ~-1 ~-12 ~31 ~-1 ~12 glowstone
+fill ~-13 ~-1 ~-30 ~13 ~-1 ~30 glowstone
+fill ~-30 ~-1 ~-13 ~30 ~-1 ~13 glowstone
+fill ~-14 ~-1 ~-30 ~14 ~-1 ~30 glowstone
+fill ~-30 ~-1 ~-14 ~30 ~-1 ~14 glowstone
+fill ~-15 ~-1 ~-29 ~15 ~-1 ~29 glowstone
+fill ~-29 ~-1 ~-15 ~29 ~-1 ~15 glowstone
+fill ~-16 ~-1 ~-29 ~16 ~-1 ~29 glowstone
+fill ~-29 ~-1 ~-16 ~29 ~-1 ~16 glowstone
+fill ~-17 ~-1 ~-28 ~17 ~-1 ~28 glowstone
+fill ~-28 ~-1 ~-17 ~28 ~-1 ~17 glowstone
+fill ~-18 ~-1 ~-28 ~18 ~-1 ~28 glowstone
+fill ~-28 ~-1 ~-18 ~28 ~-1 ~18 glowstone
+fill ~-19 ~-1 ~-27 ~19 ~-1 ~27 glowstone
+fill ~-27 ~-1 ~-19 ~27 ~-1 ~19 glowstone
+fill ~-20 ~-1 ~-26 ~20 ~-1 ~26 glowstone
+fill ~-26 ~-1 ~-20 ~26 ~-1 ~20 glowstone
+fill ~-21 ~-1 ~-25 ~21 ~-1 ~25 glowstone
+fill ~-25 ~-1 ~-21 ~25 ~-1 ~21 glowstone
+fill ~-22 ~-1 ~-25 ~22 ~-1 ~25 glowstone
+fill ~-25 ~-1 ~-22 ~25 ~-1 ~22 glowstone
+fill ~-23 ~-1 ~-24 ~23 ~-1 ~24 glowstone
+fill ~-24 ~-1 ~-23 ~24 ~-1 ~23 glowstone
+fill ~-24 ~-1 ~-23 ~24 ~-1 ~23 glowstone
+fill ~-23 ~-1 ~-24 ~23 ~-1 ~24 glowstone
 
 # outer wall
 fill ~0 ~24 ~34 ~0 ~24 ~34 black_concrete
@@ -4679,14 +4788,8 @@ fill ~-17 ~0 ~-16 ~17 ~0 ~16 light_gray_wool
 fill ~-17 ~0 ~-16 ~17 ~0 ~16 light_gray_wool
 fill ~-16 ~0 ~-17 ~16 ~0 ~17 light_gray_wool
 
+# fire bowl ceiling
 execute positioned ^ ^5 ^ run function uberop:make/fire-bowl-24
-
-execute positioned ^ ^ ^-23 rotated 0 0 run function uberop:make/bunker-24
-execute positioned ^ ^ ^23 rotated -180 0 run function uberop:make/bunker-24
-
-# fill ^26 ^8 ^ ^26 ^30 ^ ladder[facing=north]
-# fill ^-26 ^8 ^ ^-26 ^30 ^ ladder[facing=north]
-
 
 # items
 execute positioned ^20 ^ ^ rotated 0 0 run function uberop:make/chest-stand
@@ -4696,3 +4799,18 @@ execute positioned ^-20 ^ ^ run function uberop:make/chest-stand
 
 execute positioned ^-10 ^ ^10 rotated 0 -90 run function uberop:pixels/charmander
 execute positioned ^-10 ^8 ^-30 rotated 0 0 run function uberop:pixels/charmander
+
+# maze!!!
+execute positioned ^-22 ^-4 ^-22 rotated 0 0 run function uberop:mazes/09
+
+execute positioned ^ ^ ^-23 rotated 0 0 run function uberop:make/bunker-24
+execute positioned ^ ^ ^23 rotated -180 0 run function uberop:make/bunker-24
+
+# holes to get down to maze
+fill ^-3 ^ ^18 ^3 ^-2 ^15 white_concrete hollow
+fill ^-3 ^ ^18 ^3 ^ ^15 air
+fill ^-3 ^-2 ^18 ^3 ^-2 ^15 air
+
+fill ^-3 ^ ^-18 ^3 ^-2 ^-15 white_concrete hollow
+fill ^-3 ^ ^-18 ^3 ^ ^-15 air
+fill ^-3 ^-2 ^-18 ^3 ^-2 ^-15 air

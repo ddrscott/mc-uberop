@@ -312,7 +312,7 @@ fill ^44 ^ ^42 ^44 ^1 ^44 black_stained_glass
 # floor
 fill ^-1 ^-1 ^ ^44 ^-1 ^44 white_concrete
 # borders
-fill ^ ^ ^ ^44 ^1 ^ red_concrete
-fill ^ ^ ^44 ^44 ^1 ^44 red_concrete
-fill ^-1 ^ ^44 ^-1 ^1 ^ red_concrete
-fill ^44 ^ ^ ^44 ^1 ^44 red_concrete
+fill ^ ^ ^ ^44 ^4 ^ red_concrete
+fill ^ ^ ^44 ^44 ^4 ^44 red_concrete
+fill ^-1 ^ ^44 ^-1 ^4 ^ red_concrete
+fill ^44 ^ ^ ^44 ^4 ^44 red_concrete

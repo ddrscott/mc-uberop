@@ -161,10 +161,10 @@ def print_blocks(grid, io=STDOUT, h=1, w=2)
   io.puts("# floor")
   io.puts("fill ^-1 ^-1 ^ ^#{max_y} ^-1 ^#{max_y} white_concrete")
   io.puts("# borders")
-  io.puts("fill ^ ^ ^ ^#{max_y} ^#{h} ^ red_concrete")
-  io.puts("fill ^ ^ ^#{max_y} ^#{max_y} ^#{h} ^#{max_y} red_concrete")
-  io.puts("fill ^-1 ^ ^#{max_y} ^-1 ^#{h} ^ red_concrete")
-  io.puts("fill ^#{max_y} ^ ^ ^#{max_y} ^#{h} ^#{max_y} red_concrete")
+  io.puts("fill ^ ^ ^ ^#{max_y} ^#{h+3} ^ red_concrete")
+  io.puts("fill ^ ^ ^#{max_y} ^#{max_y} ^#{h+3} ^#{max_y} red_concrete")
+  io.puts("fill ^-1 ^ ^#{max_y} ^-1 ^#{h+3} ^ red_concrete")
+  io.puts("fill ^#{max_y} ^ ^ ^#{max_y} ^#{h+3} ^#{max_y} red_concrete")
 end
 
 # --------------------------------------------------------------------

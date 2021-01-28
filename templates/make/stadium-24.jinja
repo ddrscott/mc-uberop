@@ -1,11 +1,10 @@
 # remove insides
-{% for i in range(1,50) %}
+{% for i in range(-2,50) %}
 {{ disk(34, bottom=i, floor='air') | join('\n') }}
 {% endfor %}
 
 # subfloor
-{{ disk(33, bottom=-1, floor='cobblestone') | join('\n') }}
-{{ disk(32, bottom=-2, floor='cobblestone') | join('\n') }}
+{{ disk(33, bottom=-1, floor='glowstone') | join('\n') }}
 
 # outer wall
 {{ disk(34, bottom=24, floor='black_concrete', ring=3) | join('\n') }}
@@ -36,14 +35,8 @@
 {{ disk(23, bottom=1, floor='air') | join('\n') }}
 {{ disk(23, bottom=0, floor='light_gray_wool') | join('\n') }}
 
+# fire bowl ceiling
 execute positioned ^ ^5 ^ run function uberop:make/fire-bowl-24
-
-execute positioned ^ ^ ^-23 rotated 0 0 run function uberop:make/bunker-24
-execute positioned ^ ^ ^23 rotated -180 0 run function uberop:make/bunker-24
-
-# fill ^26 ^8 ^ ^26 ^30 ^ ladder[facing=north]
-# fill ^-26 ^8 ^ ^-26 ^30 ^ ladder[facing=north]
-
 
 # items
 execute positioned ^20 ^ ^ rotated 0 0 run function uberop:make/chest-stand
@@ -53,3 +46,18 @@ execute positioned ^-20 ^ ^ run function uberop:make/chest-stand
 
 execute positioned ^-10 ^ ^10 rotated 0 -90 run function uberop:pixels/charmander
 execute positioned ^-10 ^8 ^-30 rotated 0 0 run function uberop:pixels/charmander
+
+# maze!!!
+execute positioned ^-22 ^-4 ^-22 rotated 0 0 run function uberop:mazes/09
+
+execute positioned ^ ^ ^-23 rotated 0 0 run function uberop:make/bunker-24
+execute positioned ^ ^ ^23 rotated -180 0 run function uberop:make/bunker-24
+
+# holes to get down to maze
+fill ^-3 ^ ^18 ^3 ^-2 ^15 white_concrete hollow
+fill ^-3 ^ ^18 ^3 ^ ^15 air
+fill ^-3 ^-2 ^18 ^3 ^-2 ^15 air
+
+fill ^-3 ^ ^-18 ^3 ^-2 ^-15 white_concrete hollow
+fill ^-3 ^ ^-18 ^3 ^ ^-15 air
+fill ^-3 ^-2 ^-18 ^3 ^-2 ^-15 air
