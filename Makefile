@@ -16,3 +16,8 @@ mazes:
 	ruby maze.rb 15 15 random 08 > data/uberop/functions/mazes/08.mcfunction
 	ruby maze.rb 15 15 random 09 > data/uberop/functions/mazes/09.mcfunction
 	ruby maze.rb 15 15 random 10 > data/uberop/functions/mazes/10.mcfunction
+	ruby maze.rb 25 25 random 101 > data/uberop/functions/mazes/x74-1.mcfunction
+	ruby maze.rb 25 25 random 102 > data/uberop/functions/mazes/x74-2.mcfunction
+	ruby maze.rb 25 25 random 103 > data/uberop/functions/mazes/x74-3.mcfunction
+	ruby maze.rb 25 25 random 104 > data/uberop/functions/mazes/x74-4.mcfunction
+	ruby maze.rb 25 25 random 105 > data/uberop/functions/mazes/x74-5.mcfunction
