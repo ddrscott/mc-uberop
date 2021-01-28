@@ -133,6 +133,8 @@ def print_blocks(grid, io=STDOUT, h=1, w=2)
   half = (w / 2.0).ceil().to_i
   io.puts("# erase everything ")
   io.puts("fill ^#{-w} ^-2 ^#{-w} ^#{max_y+w+2} ^#{h} ^#{max_y+w+2} air")
+  io.puts("# floor")
+  io.puts("fill ^-1 ^-1 ^ ^#{max_y} ^-1 ^#{max_y} white_concrete")
   grid.each_with_index do |row, y|
     # print "|"
     #io.puts("fill ^-1 ^ ^#{y*w} ^-1 ^#{h} ^#{y*w+half} red_concrete")
@@ -154,12 +156,11 @@ def print_blocks(grid, io=STDOUT, h=1, w=2)
       else
         # print "|"
         io.puts("fill ^#{x*w+half} ^ ^#{y*w} ^#{x*w+half} ^#{h} ^#{y*w+half} black_stained_glass")
+        io.puts("fill ^#{x*w+half} ^-1 ^#{y*w} ^#{x*w+half} ^-1 ^#{y*w+half} sea_lantern")
       end
     end
     io.puts
   end
-  io.puts("# floor")
-  io.puts("fill ^-1 ^-1 ^ ^#{max_y} ^-1 ^#{max_y} white_concrete")
   io.puts("# borders")
   io.puts("fill ^ ^ ^ ^#{max_y} ^#{h+3} ^ red_concrete")
   io.puts("fill ^ ^ ^#{max_y} ^#{max_y} ^#{h+3} ^#{max_y} red_concrete")
