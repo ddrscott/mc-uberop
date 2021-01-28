@@ -197,7 +197,7 @@ until cells.empty?
   cells.delete_at(index) if index
 end
 
-print("# seed #{seed} ")
+puts("# seed #{seed} ")
 display_maze(grid)
 print_blocks(grid, io=STDOUT, h=1, w=3)
 # print(grid)
