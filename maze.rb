@@ -1,3 +1,7 @@
+# @thanks
+# http://weblog.jamisbuck.org/2010/12/27/maze-generation-recursive-backtracking
+# https://gist.githubusercontent.com/jamis/755866/raw/85fe436bdcbba2da588ed366b322e02fedba42bb/recursive-backtracker2.rb
+#
 # --------------------------------------------------------------------
 # An implementation of the "Growing Tree" algorithm. This one is
 # notable for it's ability to become nearly identical to Prim's
