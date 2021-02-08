@@ -1,0 +1,20 @@
+# Thanks: https://www.curseforge.com/minecraft/customization/battys-coordinates-datapack
+#execute unless entity @a[tag=coords_run] run gamerule commandBlockOutput false
+{%- macro text_heading(heading) -%}
+["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"dark_red"},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"dark_red"},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"dark_red"},{"text":" "},{"text":"{{heading}}","color":"dark_red"}]
+{%- endmacro -%}
+execute unless entity @a[tag=coords_run] run scoreboard objectives add x_coord dummy
+execute unless entity @a[tag=coords_run] run scoreboard objectives add y_coord dummy
+execute unless entity @a[tag=coords_run] run scoreboard objectives add z_coord dummy
+tag @a[tag=!coords_run] add coords_run
+execute as @a store result score @s x_coord run data get entity @s Pos[0]
+execute as @a store result score @s y_coord run data get entity @s Pos[1]
+execute as @a store result score @s z_coord run data get entity @s Pos[2]
+title @a[y_rotation=23..67] actionbar {{ text_heading('SW') }}
+title @a[y_rotation=68..112] actionbar {{ text_heading('W') }}
+title @a[y_rotation=113..157] actionbar {{ text_heading('NW') }}
+title @a[y_rotation=158..202] actionbar {{ text_heading('N') }}
+title @a[y_rotation=203..247] actionbar {{ text_heading('NE') }}
+title @a[y_rotation=248..292] actionbar {{ text_heading('E') }}
+title @a[y_rotation=293..337] actionbar {{ text_heading('SE') }}
+title @a[y_rotation=338..22] actionbar {{ text_heading('S') }}

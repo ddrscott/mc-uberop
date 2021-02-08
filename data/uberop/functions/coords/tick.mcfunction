@@ -1,7 +1,16 @@
-execute store result score @s coords.x run data get entity @s Pos[0]
-execute store result score @s coords.y run data get entity @s Pos[1]
-execute store result score @s coords.z run data get entity @s Pos[2]
-
-scoreboard players operation x Coords = @s coords.x
-scoreboard players operation y Coords = @s coords.y
-scoreboard players operation z Coords = @s coords.z
+# Thanks: https://www.curseforge.com/minecraft/customization/battys-coordinates-datapack
+#execute unless entity @a[tag=coords_run] run gamerule commandBlockOutput falseexecute unless entity @a[tag=coords_run] run scoreboard objectives add x_coord dummy
+execute unless entity @a[tag=coords_run] run scoreboard objectives add y_coord dummy
+execute unless entity @a[tag=coords_run] run scoreboard objectives add z_coord dummy
+tag @a[tag=!coords_run] add coords_run
+execute as @a store result score @s x_coord run data get entity @s Pos[0]
+execute as @a store result score @s y_coord run data get entity @s Pos[1]
+execute as @a store result score @s z_coord run data get entity @s Pos[2]
+title @a[y_rotation=23..67] actionbar ["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"dark_red"},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"dark_red"},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"dark_red"},{"text":" "},{"text":"SW","color":"dark_red"}]
+title @a[y_rotation=68..112] actionbar ["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"dark_red"},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"dark_red"},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"dark_red"},{"text":" "},{"text":"W","color":"dark_red"}]
+title @a[y_rotation=113..157] actionbar ["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"dark_red"},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"dark_red"},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"dark_red"},{"text":" "},{"text":"NW","color":"dark_red"}]
+title @a[y_rotation=158..202] actionbar ["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"dark_red"},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"dark_red"},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"dark_red"},{"text":" "},{"text":"N","color":"dark_red"}]
+title @a[y_rotation=203..247] actionbar ["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"dark_red"},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"dark_red"},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"dark_red"},{"text":" "},{"text":"NE","color":"dark_red"}]
+title @a[y_rotation=248..292] actionbar ["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"dark_red"},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"dark_red"},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"dark_red"},{"text":" "},{"text":"E","color":"dark_red"}]
+title @a[y_rotation=293..337] actionbar ["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"dark_red"},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"dark_red"},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"dark_red"},{"text":" "},{"text":"SE","color":"dark_red"}]
+title @a[y_rotation=338..22] actionbar ["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"dark_red"},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"dark_red"},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"dark_red"},{"text":" "},{"text":"S","color":"dark_red"}]
