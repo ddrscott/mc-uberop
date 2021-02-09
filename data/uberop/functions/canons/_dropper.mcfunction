@@ -1,0 +1,35 @@
+fill ^ ^-1 ^-2 ^-1 ^3 ^3 air
+
+# right side
+setblock ^ ^-1 ^-1 sticky_piston[facing=north]
+setblock ^ ^-2 ^-1 observer[facing=north]
+setblock ^ ^-2 ^-2 iron_block
+setblock ^ ^-3 ^-2 iron_block
+setblock ^ ^-1 ^-2 redstone_wire[east=side,north=side,west=side,south=side]
+setblock ^ ^-1 ^ slime_block
+setblock ^ ^-2 ^ slime_block
+setblock ^ ^-2 ^1 slime_block
+setblock ^ ^-1 ^1 detector_rail[shape=north_south]
+execute positioned ^ ^-1 ^0.5 run summon minecart
+
+setblock ^ ^-2 ^2 oak_fence
+setblock ^ ^-3 ^3 dead_bubble_coral_wall_fan[facing=west,waterlogged=false]
+setblock ^ ^-3 ^2 tnt
+setblock ^-1 ^-2 ^2 slime_block
+setblock ^-1 ^-3 ^2 slime_block
+setblock ^-1 ^-3 ^3 slime_block
+
+# left side
+#  setblock ^2 ^-1 ^-1 sticky_piston[facing=north]
+#  setblock ^2 ^-1 ^ slime_block
+#  setblock ^2 ^-2 ^ slime_block
+#  setblock ^2 ^-2 ^1 slime_block
+#  setblock ^2 ^-1 ^1 detector_rail[shape=north_south]
+#  execute positioned ^2 ^-1 ^0.5 run summon minecart
+#  
+#  setblock ^2 ^-2 ^2 oak_fence
+#  setblock ^2 ^-3 ^3 dead_bubble_coral_wall_fan[facing=east,waterlogged=false]
+#  setblock ^2 ^-3 ^2 tnt
+#  setblock ^3 ^-2 ^2 slime_block
+#  setblock ^3 ^-3 ^2 slime_block
+#  setblock ^3 ^-3 ^3 slime_block
