@@ -2,8 +2,8 @@ dist:
 	git archive --format zip --output uberop.zip main
 
 watch:
-	find . -name '*.jinja' -o -name '*.py' | entr -c python compile.py
-
+	#git ls-files | entr -cs 'python compile.py && python refresh.py'
+	find . -name '*.jinja' -o -name '*.py' -o -name '*.mcfunction' | entr -cs 'python compile.py && python refresh.py'
 
 mazes:
 	ruby maze.rb 15 15 random 01 > data/uberop/functions/mazes/01.mcfunction
@@ -21,3 +21,11 @@ mazes:
 	ruby maze.rb 25 25 random 103 > data/uberop/functions/mazes/x74-3.mcfunction
 	ruby maze.rb 25 25 random 104 > data/uberop/functions/mazes/x74-4.mcfunction
 	ruby maze.rb 25 25 random 105 > data/uberop/functions/mazes/x74-5.mcfunction
+
+maze-pvp:
+	border_block=black_concrete vwall=barrier hwall=barrier ruby maze.rb 20 20 random 100 > data/uberop/functions/maze-pvp/black.mcfunction
+	border_block=red_concrete vwall=red_concrete hwall=black_stained_glass ruby maze.rb 20 20 random 99 > data/uberop/functions/maze-pvp/red.mcfunction
+	border_block=orange_concrete vwall=orange_concrete hwall=black_stained_glass ruby maze.rb 20 20 random 101 > data/uberop/functions/maze-pvp/orange.mcfunction
+	border_block=yellow_concrete vwall=yellow_concrete hwall=yellow_concrete ruby maze.rb 20 20 random 102 > data/uberop/functions/maze-pvp/yellow.mcfunction
+	border_block=green_concrete vwall=green_concrete hwall=black_stained_glass ruby maze.rb 20 20 random 110 > data/uberop/functions/maze-pvp/green.mcfunction
+	border_block=light_blue_concrete vwall=glass hwall=glass ruby maze.rb 20 20 random 104 > data/uberop/functions/maze-pvp/light_blue.mcfunction
