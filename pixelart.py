@@ -56,6 +56,7 @@ DECODER = {
     'o': 'orange_concrete',
     'o2': 'orange_terracotta',
     'y': 'yellow_concrete',
+    'y2': 'yellow_wool',
     'g': 'green_concrete',
     'c': 'cyan_concrete',
     'b': 'light_blue_concrete',
@@ -63,6 +64,7 @@ DECODER = {
     'p': 'purple_concrete',
     'pk': 'pink_concrete',
     'bk': 'black_concrete',
+    'g5': 'gray_concrete',
     'gy': 'light_gray_concrete',
     'w': 'white_concrete',
     't': 'stripped_birch_log'
