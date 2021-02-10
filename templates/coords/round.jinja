@@ -1,0 +1,11 @@
+{% macro rounded(run='tp ~ ~ ~') %}
+# north
+execute as @s[y_rotation=135..224] rotated 180 0 align xyz at @s run {{ run }}
+# east
+execute as @s[y_rotation=225..314] rotated -90 0 align xyz at @s run {{ run }}
+# south
+execute as @s[y_rotation=315..360] rotated 0 0 align xyz at @s run {{ run }}
+execute as @s[y_rotation=0..44] rotated 0 0 align xyz at @s run {{ run }}
+# West
+execute as @s[y_rotation=45..134] rotated 90 0 align xyz at @s run {{ run }}
+{% endmacro %}
