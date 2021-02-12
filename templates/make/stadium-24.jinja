@@ -23,6 +23,7 @@
 # top walkway
 {{ disk(25, bottom=7, floor='white_concrete', ring=4) | join('\n') }}
 
+
 # top walkway ladders
 {{ disk(25, bottom=7, floor='white_concrete', ring=4) | join('\n') }}
 
@@ -35,6 +36,8 @@
 {{ disk(23, bottom=1, floor='air') | join('\n') }}
 {{ disk(23, bottom=0, floor='light_gray_wool') | join('\n') }}
 
+{{ cylinder(13, top=0, bottom=0, walls='glowstone') | join('\n') }}
+
 # fire bowl ceiling
 execute positioned ^ ^5 ^ run function uberop:make/fire-bowl-24
 
@@ -46,6 +49,7 @@ execute positioned ^-20 ^ ^ run function uberop:make/chest-stand
 
 execute positioned ^-10 ^ ^10 rotated 0 -90 run function uberop:pixels/charmander
 execute positioned ^-10 ^8 ^-30 rotated 0 0 run function uberop:pixels/charmander
+# execute positioned ^ ^ ^ rotated 0 0 run function uberop:pixels/luffy
 
 # maze!!!
 execute positioned ^-22 ^-4 ^-22 rotated 0 0 run function uberop:mazes/09

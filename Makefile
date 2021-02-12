@@ -3,7 +3,7 @@ dist:
 
 watch:
 	#git ls-files | entr -cs 'python compile.py && python refresh.py'
-	find . -name '*.jinja' -o -name '*.py' -o -name '*.mcfunction' | entr -cs 'python compile.py && python refresh.py'
+	find . -name '*.jinja' -o -name '*.py' -o -name '*.mcfunction' | entr -cs 'python compile.py'
 
 mazes:
 	ruby maze.rb 15 15 random 01 > data/uberop/functions/mazes/01.mcfunction

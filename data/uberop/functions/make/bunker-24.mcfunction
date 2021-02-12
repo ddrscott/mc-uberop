@@ -15,3 +15,6 @@ fill ^-5 ^8 ^-4 ^5 ^8 ^-4 end_rod
 # ladders
 fill ^-4 ^2 ^-3 ^-4 ^7 ^-3 ladder[facing=north]
 fill ^4 ^2 ^-3 ^4 ^7 ^-3 ladder[facing=south]
+
+setblock ^ ^8 ^4 command_block{Command:"kill @e[distance=..50,type=!minecraft:player]"}
+setblock ^ ^8 ^4 crimson_button{face:floor}

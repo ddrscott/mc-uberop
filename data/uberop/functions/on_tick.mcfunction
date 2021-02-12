@@ -4,4 +4,6 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:netherite_shovel"}]}] ru
 
 function uberop:carrot
 
+# execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:grass_block"}]}] run function uberop:make/disk-grass-15
+
 execute as @a run function uberop:coords/tick

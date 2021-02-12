@@ -131,45 +131,51 @@ def display_maze(grid)
 end
 
 def print_blocks(grid, io=STDOUT, h=1, w=2)
+
+  border_block = ENV['border_block'] || 'red_concrete'
+  floor_block = ENV['floor_block'] || 'white_concrete'
+  vwall = ENV['vwall'] || 'black_stained_glass'
+  hwall = ENV['hwall'] || 'red_concrete'
+  wall_height = (ENV['wall_height'] || 2).to_i
+
+
   # print "\e[H" # move to upper-left
   # puts " " + "_" * 
   max_y = (grid[0].length * w) - 1
   half = (w / 2.0).ceil().to_i
   io.puts("# erase everything ")
-  io.puts("fill ^#{-w} ^-2 ^#{-w} ^#{max_y+w+2} ^#{h} ^#{max_y+w+2} air")
+  io.puts("fill ^#{-w} ^-1 ^#{-w} ^#{max_y+w+2} ^#{h+3} ^#{max_y+w+2} air")
   io.puts("# floor")
-  io.puts("fill ^-1 ^-1 ^ ^#{max_y} ^-1 ^#{max_y} white_concrete")
+  io.puts("fill ^-1 ^-1 ^ ^#{max_y} ^-1 ^#{max_y} #{floor_block}")
   grid.each_with_index do |row, y|
-    # print "|"
-    #io.puts("fill ^-1 ^ ^#{y*w} ^-1 ^#{h} ^#{y*w+half} red_concrete")
     row.each_with_index do |cell, x|
-      # print "_"
-      bot = "fill ^#{x*w-1} ^ ^#{y*w+half} ^#{x*w+half} ^#{h} ^#{y*w+half} red_concrete\n"
+      bottom_bar = "fill ^#{x*w-1} ^ ^#{y*w+half} ^#{x*w+half} ^#{wall_height-1} ^#{y*w+half} #{hwall}\n"
+      bottom_bar << "fill ^#{x*w-1} ^-1 ^#{y*w+half} ^#{x*w+half} ^-1 ^#{y*w+half} sea_lantern\n"
 
       if cell == 0 && y+1 < grid.length && grid[y+1][x] == 0
         # print " "
         # io.puts("fill ^#{x*w} ^#{h + 2} ^#{y*w} ^#{x*w} ^#{h + 2} ^#{y*w} sea_lantern")
       else
-        io.print((cell & S != 0) ? "" : bot)
+        io.print((cell & S != 0) ? "" : bottom_bar)
       end
 
       if cell == 0 && x+1 < row.length && row[x+1] == 0
-        io.print((y+1 < grid.length && (grid[y+1][x] == 0 || grid[y+1][x+1] == 0)) ? "" : bot)
+        io.print((y+1 < grid.length && (grid[y+1][x] == 0 || grid[y+1][x+1] == 0)) ? "" : bottom_bar)
       elsif cell & E != 0
-        io.print(((cell | row[x+1]) & S != 0) ? "" : bot)
+        io.print(((cell | row[x+1]) & S != 0) ? "" : bottom_bar)
       else
         # print "|"
-        io.puts("fill ^#{x*w+half} ^ ^#{y*w} ^#{x*w+half} ^#{h} ^#{y*w+half} black_stained_glass")
+        io.puts("fill ^#{x*w+half} ^ ^#{y*w} ^#{x*w+half} ^#{wall_height-1} ^#{y*w+half} #{vwall}")
         io.puts("fill ^#{x*w+half} ^-1 ^#{y*w} ^#{x*w+half} ^-1 ^#{y*w+half} sea_lantern")
       end
     end
     io.puts
   end
   io.puts("# borders")
-  io.puts("fill ^ ^ ^ ^#{max_y} ^#{h+3} ^ red_concrete")
-  io.puts("fill ^ ^ ^#{max_y} ^#{max_y} ^#{h+3} ^#{max_y} red_concrete")
-  io.puts("fill ^-1 ^ ^#{max_y} ^-1 ^#{h+3} ^ red_concrete")
-  io.puts("fill ^#{max_y} ^ ^ ^#{max_y} ^#{h+3} ^#{max_y} red_concrete")
+  io.puts("fill ^ ^ ^ ^#{max_y} ^#{h+3} ^ #{border_block}")
+  io.puts("fill ^ ^ ^#{max_y} ^#{max_y} ^#{h+3} ^#{max_y} #{border_block}")
+  io.puts("fill ^-1 ^ ^#{max_y} ^-1 ^#{h+3} ^ #{border_block}")
+  io.puts("fill ^#{max_y} ^ ^ ^#{max_y} ^#{h+3} ^#{max_y} #{border_block}")
 end
 
 # --------------------------------------------------------------------

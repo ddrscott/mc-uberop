@@ -4504,6 +4504,7 @@ fill ~-16 ~7 ~-14 ~16 ~7 ~14 air
 fill ~-15 ~7 ~-15 ~15 ~7 ~15 air
 fill ~-15 ~7 ~-15 ~15 ~7 ~15 air
 
+
 # top walkway ladders
 fill ~0 ~7 ~25 ~0 ~7 ~25 white_concrete
 fill ~0 ~7 ~-25 ~0 ~7 ~-25 white_concrete
@@ -4788,6 +4789,83 @@ fill ~-17 ~0 ~-16 ~17 ~0 ~16 light_gray_wool
 fill ~-17 ~0 ~-16 ~17 ~0 ~16 light_gray_wool
 fill ~-16 ~0 ~-17 ~16 ~0 ~17 light_gray_wool
 
+fill ~0 ~0 ~13 ~0 ~0 ~13 glowstone
+fill ~0 ~0 ~-13 ~0 ~0 ~-13 glowstone
+fill ~13 ~0 ~0 ~13 ~0 ~0 glowstone
+fill ~-13 ~0 ~0 ~-13 ~0 ~0 glowstone
+fill ~1 ~0 ~13 ~1 ~0 ~13 glowstone
+fill ~-1 ~0 ~13 ~-1 ~0 ~13 glowstone
+fill ~1 ~0 ~-13 ~1 ~0 ~-13 glowstone
+fill ~-1 ~0 ~-13 ~-1 ~0 ~-13 glowstone
+fill ~13 ~0 ~1 ~13 ~0 ~1 glowstone
+fill ~-13 ~0 ~1 ~-13 ~0 ~1 glowstone
+fill ~13 ~0 ~-1 ~13 ~0 ~-1 glowstone
+fill ~-13 ~0 ~-1 ~-13 ~0 ~-1 glowstone
+fill ~2 ~0 ~13 ~2 ~0 ~13 glowstone
+fill ~-2 ~0 ~13 ~-2 ~0 ~13 glowstone
+fill ~2 ~0 ~-13 ~2 ~0 ~-13 glowstone
+fill ~-2 ~0 ~-13 ~-2 ~0 ~-13 glowstone
+fill ~13 ~0 ~2 ~13 ~0 ~2 glowstone
+fill ~-13 ~0 ~2 ~-13 ~0 ~2 glowstone
+fill ~13 ~0 ~-2 ~13 ~0 ~-2 glowstone
+fill ~-13 ~0 ~-2 ~-13 ~0 ~-2 glowstone
+fill ~3 ~0 ~13 ~3 ~0 ~13 glowstone
+fill ~-3 ~0 ~13 ~-3 ~0 ~13 glowstone
+fill ~3 ~0 ~-13 ~3 ~0 ~-13 glowstone
+fill ~-3 ~0 ~-13 ~-3 ~0 ~-13 glowstone
+fill ~13 ~0 ~3 ~13 ~0 ~3 glowstone
+fill ~-13 ~0 ~3 ~-13 ~0 ~3 glowstone
+fill ~13 ~0 ~-3 ~13 ~0 ~-3 glowstone
+fill ~-13 ~0 ~-3 ~-13 ~0 ~-3 glowstone
+fill ~4 ~0 ~12 ~4 ~0 ~12 glowstone
+fill ~-4 ~0 ~12 ~-4 ~0 ~12 glowstone
+fill ~4 ~0 ~-12 ~4 ~0 ~-12 glowstone
+fill ~-4 ~0 ~-12 ~-4 ~0 ~-12 glowstone
+fill ~12 ~0 ~4 ~12 ~0 ~4 glowstone
+fill ~-12 ~0 ~4 ~-12 ~0 ~4 glowstone
+fill ~12 ~0 ~-4 ~12 ~0 ~-4 glowstone
+fill ~-12 ~0 ~-4 ~-12 ~0 ~-4 glowstone
+fill ~5 ~0 ~12 ~5 ~0 ~12 glowstone
+fill ~-5 ~0 ~12 ~-5 ~0 ~12 glowstone
+fill ~5 ~0 ~-12 ~5 ~0 ~-12 glowstone
+fill ~-5 ~0 ~-12 ~-5 ~0 ~-12 glowstone
+fill ~12 ~0 ~5 ~12 ~0 ~5 glowstone
+fill ~-12 ~0 ~5 ~-12 ~0 ~5 glowstone
+fill ~12 ~0 ~-5 ~12 ~0 ~-5 glowstone
+fill ~-12 ~0 ~-5 ~-12 ~0 ~-5 glowstone
+fill ~6 ~0 ~12 ~6 ~0 ~12 glowstone
+fill ~-6 ~0 ~12 ~-6 ~0 ~12 glowstone
+fill ~6 ~0 ~-12 ~6 ~0 ~-12 glowstone
+fill ~-6 ~0 ~-12 ~-6 ~0 ~-12 glowstone
+fill ~12 ~0 ~6 ~12 ~0 ~6 glowstone
+fill ~-12 ~0 ~6 ~-12 ~0 ~6 glowstone
+fill ~12 ~0 ~-6 ~12 ~0 ~-6 glowstone
+fill ~-12 ~0 ~-6 ~-12 ~0 ~-6 glowstone
+fill ~7 ~0 ~11 ~7 ~0 ~11 glowstone
+fill ~-7 ~0 ~11 ~-7 ~0 ~11 glowstone
+fill ~7 ~0 ~-11 ~7 ~0 ~-11 glowstone
+fill ~-7 ~0 ~-11 ~-7 ~0 ~-11 glowstone
+fill ~11 ~0 ~7 ~11 ~0 ~7 glowstone
+fill ~-11 ~0 ~7 ~-11 ~0 ~7 glowstone
+fill ~11 ~0 ~-7 ~11 ~0 ~-7 glowstone
+fill ~-11 ~0 ~-7 ~-11 ~0 ~-7 glowstone
+fill ~8 ~0 ~10 ~8 ~0 ~10 glowstone
+fill ~-8 ~0 ~10 ~-8 ~0 ~10 glowstone
+fill ~8 ~0 ~-10 ~8 ~0 ~-10 glowstone
+fill ~-8 ~0 ~-10 ~-8 ~0 ~-10 glowstone
+fill ~10 ~0 ~8 ~10 ~0 ~8 glowstone
+fill ~-10 ~0 ~8 ~-10 ~0 ~8 glowstone
+fill ~10 ~0 ~-8 ~10 ~0 ~-8 glowstone
+fill ~-10 ~0 ~-8 ~-10 ~0 ~-8 glowstone
+fill ~9 ~0 ~9 ~9 ~0 ~9 glowstone
+fill ~-9 ~0 ~9 ~-9 ~0 ~9 glowstone
+fill ~9 ~0 ~-9 ~9 ~0 ~-9 glowstone
+fill ~-9 ~0 ~-9 ~-9 ~0 ~-9 glowstone
+fill ~9 ~0 ~9 ~9 ~0 ~9 glowstone
+fill ~-9 ~0 ~9 ~-9 ~0 ~9 glowstone
+fill ~9 ~0 ~-9 ~9 ~0 ~-9 glowstone
+fill ~-9 ~0 ~-9 ~-9 ~0 ~-9 glowstone
+
 # fire bowl ceiling
 execute positioned ^ ^5 ^ run function uberop:make/fire-bowl-24
 
@@ -4799,6 +4877,7 @@ execute positioned ^-20 ^ ^ run function uberop:make/chest-stand
 
 execute positioned ^-10 ^ ^10 rotated 0 -90 run function uberop:pixels/charmander
 execute positioned ^-10 ^8 ^-30 rotated 0 0 run function uberop:pixels/charmander
+# execute positioned ^ ^ ^ rotated 0 0 run function uberop:pixels/luffy
 
 # maze!!!
 execute positioned ^-22 ^-4 ^-22 rotated 0 0 run function uberop:mazes/09

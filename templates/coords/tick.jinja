@@ -1,7 +1,7 @@
 # Thanks: https://www.curseforge.com/minecraft/customization/battys-coordinates-datapack
 #execute unless entity @a[tag=coords_run] run gamerule commandBlockOutput false
 {%- macro text_heading(heading) -%}
-["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"dark_gray","bold":true},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"dark_gray","bold":true},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"dark_gray","bold":true},{"text":" "},{"text":"{{heading}}","color":"dark_gray"}]
+["",{"text":"x","color":"gray"},{"score":{"name":"*","objective":"x_coord"},"color":"gold"},{"text":" y","color":"gray"},{"score":{"name":"*","objective":"y_coord"},"color":"gold"},{"text":" z","color":"gray"},{"score":{"name":"*","objective":"z_coord"},"color":"gold"},{"text":" "},{"text":"{{heading}}","color":"gold"}]
 {%- endmacro -%}
 execute unless entity @a[tag=coords_run] run scoreboard objectives add x_coord dummy
 execute unless entity @a[tag=coords_run] run scoreboard objectives add y_coord dummy
