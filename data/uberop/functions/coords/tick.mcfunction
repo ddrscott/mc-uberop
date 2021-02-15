@@ -1,5 +1,5 @@
 # Thanks: https://www.curseforge.com/minecraft/customization/battys-coordinates-datapack
-execute unless entity @a[tag=coords_run] run gamerule commandBlockOutput false
+# execute unless entity @a[tag=coords_run] run gamerule commandBlockOutput false
 execute unless entity @a[tag=coords_run] run scoreboard objectives add x_coord dummy
 execute unless entity @a[tag=coords_run] run scoreboard objectives add y_coord dummy
 execute unless entity @a[tag=coords_run] run scoreboard objectives add z_coord dummy
