@@ -49,7 +49,7 @@ def cylinder(radius, top, bottom=-1, walls='netherite_block'):
         yield f"fill ~{x0 - y} ~{bottom} ~{y0 - x} ~{x0 - y} ~{top} ~{y0 - x} {walls}"
 
 
-def disk(radius, bottom=-1, floor='birch_planks', top=None, ring=None):
+def disk(radius, bottom=-1, floor='birch_planks', xoff=0, yoff=0, top=None, ring=None):
     x0 = 0
     y0 = 0
 
@@ -61,10 +61,10 @@ def disk(radius, bottom=-1, floor='birch_planks', top=None, ring=None):
 
     top = top or bottom
 
-    yield f"fill ~{x0} ~{bottom} ~{y0 + radius} ~{x0} ~{top} ~{y0 + radius} {floor}"
-    yield f"fill ~{x0} ~{bottom} ~{y0 - radius} ~{x0} ~{top} ~{y0 - radius} {floor}"
-    yield f"fill ~{x0 + radius} ~{bottom} ~{y0} ~{x0 + radius} ~{top} ~{y0} {floor}"
-    yield f"fill ~{x0 - radius} ~{bottom} ~{y0} ~{x0 - radius} ~{top} ~{y0} {floor}"
+    yield f"fill ~{xoff + x0} ~{bottom} ~{yoff + y0 + radius} ~{xoff + x0} ~{top} ~{yoff + y0 + radius} {floor}"
+    yield f"fill ~{xoff + x0} ~{bottom} ~{yoff + y0 - radius} ~{xoff + x0} ~{top} ~{yoff + y0 - radius} {floor}"
+    yield f"fill ~{xoff + x0 + radius} ~{bottom} ~{yoff + y0} ~{xoff + x0 + radius} ~{top} ~{yoff + y0} {floor}"
+    yield f"fill ~{xoff + x0 - radius} ~{bottom} ~{yoff + y0} ~{xoff + x0 - radius} ~{top} ~{yoff + y0} {floor}"
 
     while x < y:
         if f >= 0:
@@ -75,8 +75,8 @@ def disk(radius, bottom=-1, floor='birch_planks', top=None, ring=None):
         ddf_x += 2
         f += ddf_x
         # floor
-        yield f"fill ~{x0 - x} ~{bottom} ~{y0 - y} ~{x0 + x} ~{top} ~{y0 + y} {floor}"
-        yield f"fill ~{x0 - y} ~{bottom} ~{y0 - x} ~{x0 + y} ~{top} ~{y0 + x} {floor}"
+        yield f"fill ~{xoff + x0 - x} ~{bottom} ~{yoff + y0 - y} ~{xoff + x0 + x} ~{top} ~{yoff + y0 + y} {floor}"
+        yield f"fill ~{xoff + x0 - y} ~{bottom} ~{yoff + y0 - x} ~{xoff + x0 + y} ~{top} ~{yoff + y0 + x} {floor}"
 
     if ring:
-        yield from disk(radius-ring, bottom=bottom, floor='air')
+        yield from disk(radius-ring, bottom=bottom, floor='air', xoff=xoff, yoff=yoff)

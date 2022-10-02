@@ -2,4 +2,4 @@
 setblock ~ ~4 ~1 spawner{SpawnData:{id:skeleton},SpawnRange:5,SpawnCount:1,MaxNearbyEntities:999,Delay:20,MinSpawnDelay:20,MaxSpawnDelay:40,RequiredPlayerRange:16}
 setblock ~ ~4 ~-1 spawner{SpawnData:{id:zombie},SpawnRange:5,SpawnCount:1,MaxNearbyEntities:999,Delay:20,MinSpawnDelay:20,MaxSpawnDelay:40,RequiredPlayerRange:16}
 setblock ~1 ~4 ~ spawner{SpawnData:{id:spider},SpawnRange:5,SpawnCount:1,MaxNearbyEntities:999,Delay:20,MinSpawnDelay:20,MaxSpawnDelay:40,RequiredPlayerRange:16}
-setblock ~-1 ~4 ~ spawner{SpawnData:{id:enderman},SpawnRange:5,SpawnCount:1,MaxNearbyEntities:999,Delay:20,MinSpawnDelay:20,MaxSpawnDelay:40,RequiredPlayerRange:16}
+setblock ~-1 ~4 ~ spawner{SpawnData:{id:blaze},SpawnRange:5,SpawnCount:1,MaxNearbyEntities:999,Delay:20,MinSpawnDelay:20,MaxSpawnDelay:40,RequiredPlayerRange:16}

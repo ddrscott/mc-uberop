@@ -1,0 +1,22 @@
+{%- set blocks = [
+'white_concrete',
+'orange_concrete',
+'magenta_concrete',
+'light_blue_concrete',
+'yellow_concrete',
+'lime_concrete',
+'pink_concrete',
+'gray_concrete',
+'light_gray_concrete',
+'cyan_concrete',
+'purple_concrete',
+'blue_concrete',
+'brown_concrete',
+'green_concrete',
+'red_concrete',
+'black_concrete'] -%}
+{%- for x in range(0, 16 * 6, 16) %}
+{%- for z in range(0, 16 * 50, 16) %}
+{{ disk(7, bottom=-20, top=[0,-1, 1] | random, floor=blocks | random, xoff=x, yoff=z) | join('\n') }}
+{%- endfor %}
+{%- endfor %}
